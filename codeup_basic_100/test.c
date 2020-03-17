@@ -35,6 +35,47 @@ void f_1008(void) {
 	printf("\u2514\u2534\u2518\n");
 }
 
+void f_1010(void) {
+	int input;
+
+	scanf("%d", &input);
+	printf("%d", input);
+}
+
+void f_1011(void) {
+	char input;
+
+	scanf("%c", &input);
+	printf("%c", input);
+}
+
+void f_1012(void) {
+	float input;
+
+	scanf("%f", &input);
+	printf("%f", input);
+}
+
+void f_1013(void) {
+	int a, b;
+
+	scanf("%d%d", &a, &b);
+	printf("%d %d", a, b);
+}
+
+void f_1014(void) {
+	char x, y;
+
+	scanf("%c %c", &x, &y);
+	printf("%c %c", y, x);
+}
+
+void f_1015(void) {
+	float a;
+
+	scanf("%f", &a); // ½Ç
+	printf("%.2f", a);
+}
 
 
 int main(void) {
