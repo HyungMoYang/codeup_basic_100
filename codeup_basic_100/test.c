@@ -1,6 +1,18 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+int main(void) {
+
+
+	return 0;
+}
+
+
+
+
+
+
+
 void f_1001(void) {
 	printf("Hello");
 }
@@ -135,13 +147,33 @@ void f_1022(void) {
 
 	/*
 	컴파일 에러났음
-	키보드 입력을 위해서 #include <stdio.h> 추가했어야함 
+	키보드 입력을 위해서 #include <stdio.h> 추가했어야함
 	*/
 }
 
-int main(void) {
+void f_1023(void) {
+	int x, y; // 실수의 정수부, 실수부
 
+	scanf("%d.%d", &x, &y);
+	printf("%d\n%d", x, y);
+}
 
+void f_1024(void) {
+	int i; // for 
+	char input_string[21];
 
-	return 0;
+	scanf("%s", input_string);
+	for (i = 0; input_string[i] != '\0'; i++) {
+		printf("\'%c\'\n", input_string[i]);
+	}
+}
+
+void f_1025(void) {
+	int a, b, c, d, e;
+	scanf("%1d%1d%1d%1d%1d", &a, &b, &c, &d, &e);
+	printf("[%d]\n", a * 10000);
+	printf("[%d]\n", b * 1000);
+	printf("[%d]\n", c * 100);
+	printf("[%d]\n", d * 10);
+	printf("[%d]\n", e);
 }
