@@ -3,8 +3,6 @@
 
 int main(void) {
 
-
-	return 0;
 }
 
 
@@ -177,3 +175,21 @@ void f_1025(void) {
 	printf("[%d]\n", d * 10);
 	printf("[%d]\n", e);
 }
+
+void f_1026(void) {
+	int h, m, s;
+
+	scanf("%d:%d:%d", &h, &m, &s);
+	printf("%d", m);
+}
+
+void f_1027(void) {
+	int y, m, d;
+
+	scanf("%d.%d.%d", &y, &m, &d);
+	printf("%02d-%02d-%04d", d, m, y);
+
+	return 0;
+}
+
+
