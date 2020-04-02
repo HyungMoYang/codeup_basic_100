@@ -2,7 +2,12 @@
 #include <stdio.h>
 
 int main(void) {
+	long long int n;
+	
+	scanf("%lld", &n);
+	printf("%lld", n);
 
+	return 0;
 }
 
 
@@ -192,4 +197,16 @@ void f_1027(void) {
 	return 0;
 }
 
+void f_1028(void) {
+	unsigned int x; // unsigned int 데이터형을 사용하면 0 ~ 4294967295 범위의 정수를 저장할 수 있다.
 
+	scanf("%u", &x);
+	printf("%u", x);
+}
+ 
+void f_1029(void) {
+	double d;
+
+	scanf("%lf", &d); // f: float lf: long float->double
+	printf("%.11lf", d); // %.11lf 소수점 이하 11자리까지 출력
+}
