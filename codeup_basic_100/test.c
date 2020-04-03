@@ -2,10 +2,7 @@
 #include <stdio.h>
 
 int main(void) {
-	long long int n;
-	
-	scanf("%lld", &n);
-	printf("%lld", n);
+
 
 	return 0;
 }
@@ -209,4 +206,60 @@ void f_1029(void) {
 
 	scanf("%lf", &d); // f: float lf: long float->double
 	printf("%.11lf", d); // %.11lf 소수점 이하 11자리까지 출력
+}
+
+void f_1030(void) {
+	long long int n;
+
+	scanf("%lld", &n);
+	printf("%lld", n);
+}
+
+void f_1031(void) {
+	int x;
+
+	scanf("%d", &x);
+	printf("%o", x); // %o: 8진수로 출력
+}
+
+void f_1032(void) {
+	int x;
+
+	scanf("%d", &x);
+	printf("%x", x); // 16진수 출력: x
+}
+
+void f_1033(void) {
+	int x;
+
+	scanf("%d", &x);
+	printf("%X", x); // 16진수 출력: x
+}
+
+void f_1034(void) {
+	int number;
+
+	scanf("%o", &number);
+	printf("%d", number);
+}
+
+void f_1035(void) {
+	int number;
+
+	scanf("%x", &number);
+	printf("%o", number);
+}
+
+void f_1036(void) {
+	char ascii;
+
+	scanf("%c", &ascii);
+	printf("%d", ascii);
+}
+
+void f_1037(void) {
+	int ascii;
+
+	scanf("%d", &ascii);
+	printf("%c", ascii);
 }
