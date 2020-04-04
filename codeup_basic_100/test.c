@@ -2,7 +2,10 @@
 #include <stdio.h>
 
 int main(void) {
+	long long int a;
 
+	scanf("%lld", &a);
+	printf("%lld", a + 1);
 
 	return 0;
 }
@@ -262,4 +265,39 @@ void f_1037(void) {
 
 	scanf("%d", &ascii);
 	printf("%c", ascii);
+}
+
+void f_1038(void) {
+	long long int a, b;
+
+	scanf("%lld %lld", &a, &b);
+	printf("%lld", a + b);
+}
+
+void f_1039(void) {
+	long long int a, b;
+
+	scanf("%lld %lld", &a, &b);
+	printf("%lld", a + b);
+}
+
+void f_1040(void) {
+	int a;
+
+	scanf("%d", &a);
+	printf("%d", -a);
+}
+
+void f_1041(void) {
+	char ascii;
+
+	scanf("%c", &ascii);
+	printf("%c", ascii + 1);
+}
+
+void f_1042(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", a % b);
 }
