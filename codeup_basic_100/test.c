@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 int main(void) {
+	int a;
 
-
+	scanf("%d", &a);
+	printf("%d", !a);
 
 	return 0;
 }
@@ -334,3 +336,34 @@ void f_1046(void) {
 	printf("%.1f\n", (float)((a + b + c) / 3.0));
 }
 
+void f_1047(void) {
+	int a;
+
+	scanf("%d", &a);
+	printf("%d", a << 1);
+}
+
+void f_1048(void) {
+	int x, y;
+
+	scanf("%d %d", &x, &y);
+	printf("%d", x << y);
+}
+
+void f_1049(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", a > b ? 1 : 0);
+}
+
+void f_1050(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", a == b ? 1 : 0);
+}
+
+void f_1051(void) {
+
+}
