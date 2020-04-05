@@ -2,10 +2,8 @@
 #include <stdio.h>
 
 int main(void) {
-	long long int a;
 
-	scanf("%lld", &a);
-	printf("%lld", a + 1);
+
 
 	return 0;
 }
@@ -299,5 +297,40 @@ void f_1042(void) {
 	int a, b;
 
 	scanf("%d %d", &a, &b);
+	printf("%d", a / b);
+}
+
+void f_1043(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
 	printf("%d", a % b);
 }
+
+void f_1044(void) {
+	long long int a;
+
+	scanf("%lld", &a);
+	printf("%lld", a + 1);
+}
+
+void f_1045(void) {
+	unsigned int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d\n", a + b);
+	printf("%d\n", a - b);
+	printf("%d\n", a * b);
+	printf("%d\n", a / b);
+	printf("%d\n", a % b);
+	printf("%.2f\n", (float)a / b);
+}
+
+void f_1046(void) {
+	long long int a, b, c;
+
+	scanf("%lld %lld %lld", &a, &b, &c); // 선언부 이후에 받을때 주의
+	printf("%lld\n", a + b + c);
+	printf("%.1f\n", (float)((a + b + c) / 3.0));
+}
+
