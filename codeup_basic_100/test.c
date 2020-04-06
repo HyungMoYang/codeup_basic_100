@@ -2,10 +2,7 @@
 #include <stdio.h>
 
 int main(void) {
-	int a;
 
-	scanf("%d", &a);
-	printf("%d", !a);
 
 	return 0;
 }
@@ -365,5 +362,57 @@ void f_1050(void) {
 }
 
 void f_1051(void) {
+	int a, b;
 
+	scanf("%d %d", &a, &b);
+	printf("%d", a <= b ? 1 : 0);
+}
+
+void f_1052(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", a != b ? 1 : 0);
+}
+
+void f_1053(void) {
+	int a;
+
+	scanf("%d", &a);
+	printf("%d", !a);
+}
+
+void f_1054(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", a && b);
+}
+
+void f_1055(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", a || b);
+}
+
+void f_1056(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", (a && !b) || (!a && b)); // XOR(exclusive or)
+}
+
+void f_1057(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", (a && b) || (!a && !b));
+}
+
+void f_1058(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", !(a || b) && (!a && !b));
 }
