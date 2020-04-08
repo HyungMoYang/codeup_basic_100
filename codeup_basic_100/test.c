@@ -2,7 +2,10 @@
 #include <stdio.h>
 
 int main(void) {
+	int a, b;
 
+	scanf("%d %d", &a, &b);
+	printf("%d", a ^ b);
 
 	return 0;
 }
@@ -415,4 +418,22 @@ void f_1058(void) {
 
 	scanf("%d %d", &a, &b);
 	printf("%d", !(a || b) && (!a && !b));
+}
+
+void f_1059(void) {
+	int a;
+
+	scanf("%d", &a);
+	printf("%d", ~a);
+}
+
+void f_1060(void) {
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	printf("%d", a & b);
+}
+
+void f_1061(void) {
+
 }
