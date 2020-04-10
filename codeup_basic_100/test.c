@@ -2,10 +2,32 @@
 #include <stdio.h>
 
 int main(void) {
-	int a, b, c;
+	int a;
 
-	scanf("%d %d %d", &a, &b, &c);
-	printf("%d", (a < b ? a : b) < c ? (a < b ? a : b) : c);
+	scanf("%d", &a);
+
+	switch (a) {
+	case 12:
+	case 1:
+	case 2:
+		printf("winter\n");
+		break;
+	case 3:
+	case 4:
+	case 5:
+		printf("spring\n");
+		break;
+	case 6:
+	case 7:
+	case 8:
+		printf("summer\n");
+		break;
+	case 9:
+	case 10:
+	case 11:
+		printf("fall\n");
+		break;
+	}
 
 	return 0;
 }
@@ -448,6 +470,8 @@ void f_1062(void) {
 	printf("%d", a ^ b);
 }
 
+
+// 기초 삼항 연산
 void f_1063(void) {
 	int a, b;
 
@@ -460,4 +484,104 @@ void f_1064(void) {
 
 	scanf("%d %d %d", &a, &b, &c);
 	printf("%d", (a < b ? a : b) < c ? (a < b ? a : b) : c);
+}
+
+// [기초-조건분기/선택실행구조]
+void f_1065(void) {
+	int a, b, c;
+
+	scanf("%d %d %d", &a, &b, &c);
+	if (a % 2 == 0)
+		printf("%d\n", a);
+	if (b % 2 == 0)
+		printf("%d\n", b);
+	if (c % 2 == 0)
+		printf("%d\n", c);
+}
+
+void f_1066(void) {
+	int a, b, c;
+
+	scanf("%d %d %d", &a, &b, &c);
+	if (a % 2 == 0)
+		printf("%s\n", "even");
+	else
+		printf("%s\n", "odd");
+	if (b % 2 == 0)
+		printf("%s\n", "even");
+	else
+		printf("%s\n", "odd");
+	if (c % 2 == 0)
+		printf("%s\n", "even");
+	else
+		printf("%s\n", "odd");
+}
+
+void f_1067(void) {
+	int a;
+
+	scanf("%d", &a);
+
+	if (a > 0) {
+		printf("%s\n", "plus");
+
+		if (a % 2 == 0)
+			printf("%s\n", "even");
+		else
+			printf("%s\n", "odd");
+	}
+	else {
+		printf("%s\n", "minus");
+
+		if (a % 2 == 0)
+			printf("%s\n", "even");
+		else
+			printf("%s\n", "odd");
+	}
+}
+
+void f_1068(void) {
+	int a;
+
+	scanf("%d", &a);
+
+	if (a >= 90) {
+		printf("A\n");
+	}
+	else if (a >= 70) {
+		printf("B\n");
+	}
+	else if (a >= 40) {
+		printf("C\n");
+	}
+	else {
+		printf("D\n");
+	}
+}
+
+void f_1069(void) {
+	char a;
+
+	scanf("%c", &a);
+
+	switch (a) {
+	case 'A':
+		printf("best!!!\n");
+		break;
+	case 'B':
+		printf("good!!\n");
+		break;
+	case 'C':
+		printf("run!\n");
+		break;
+	case 'D':
+		printf("slowly~\n");
+		break;
+	default:
+		printf("what?\n");
+	}
+}
+
+void f_1070(void) {
+
 }
