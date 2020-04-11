@@ -2,35 +2,18 @@
 #include <stdio.h>
 
 int main(void) {
-	int a;
+	int i, num;
 
-	scanf("%d", &a);
-
-	switch (a) {
-	case 12:
-	case 1:
-	case 2:
-		printf("winter\n");
-		break;
-	case 3:
-	case 4:
-	case 5:
-		printf("spring\n");
-		break;
-	case 6:
-	case 7:
-	case 8:
-		printf("summer\n");
-		break;
-	case 9:
-	case 10:
-	case 11:
-		printf("fall\n");
-		break;
+	scanf("%d", &num);
+	
+	for (i = 0; i <= num; i++) {
+		printf("%d\n", i);
 	}
 
 	return 0;
 }
+
+
 
 
 
@@ -583,5 +566,98 @@ void f_1069(void) {
 }
 
 void f_1070(void) {
+	int a;
 
+	scanf("%d", &a);
+
+	switch (a) {
+	case 12:
+	case 1:
+	case 2:
+		printf("winter\n");
+		break;
+	case 3:
+	case 4:
+	case 5:
+		printf("spring\n");
+		break;
+	case 6:
+	case 7:
+	case 8:
+		printf("summer\n");
+		break;
+	case 9:
+	case 10:
+	case 11:
+		printf("fall\n");
+		break;
+	}
+}
+
+//[기초-반복실행구조]
+void f_1071(void) {
+	int num;
+
+reload:
+	scanf("%d", &num);
+
+	if (num != 0) {
+		printf("%d\n", num);
+		goto reload;
+	}
+}
+
+void f_1072(void) {
+	int cnt, num;
+
+	scanf("%d", &cnt); // count
+
+reload:
+	scanf("%d", &num);
+	if (cnt-- != 0) {
+		printf("%d\n", num);
+		goto reload;
+	}
+}
+
+void f_1073(void) {
+	int num;
+
+	while (1) {
+		scanf("%d", &num);
+		if (num == 0)
+			break;
+		printf("%d\n", num);
+	}
+}
+
+void f_1074(void) {
+	int num;
+
+	scanf("%d", &num);
+
+	while (num > 0) {
+		printf("%d\n", num);
+		num--;
+	}
+}
+
+void f_1075(void) {
+	int num;
+
+	scanf("%d", &num);
+
+	while (num > 0) {
+		printf("%d\n", num - 1);
+		num--;
+	}
+}
+
+void f_1076(void) {
+	char ap, i;
+
+	scanf("%c", &ap);
+	for (i = 'a'; i <= ap; i++) {
+		printf("%c ", i);
+	}
 }
