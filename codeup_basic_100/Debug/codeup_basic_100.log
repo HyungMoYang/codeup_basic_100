@@ -1,3 +1,6 @@
 ﻿  test.c
-C:\Users\yhmsm\workspace\C\codeup_basic_100\codeup_basic_100\test.c(202,10): warning C4098: 'f_1027': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\yhmsm\workspace\C\codeup_basic_100\codeup_basic_100\test.c(201,10): warning C4098: 'f_1027': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\yhmsm\workspace\C\codeup_basic_100\codeup_basic_100\test.c(776,24): warning C4244: '=': '__int64'에서 'double'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yhmsm\workspace\C\codeup_basic_100\codeup_basic_100\test.c(787,31): warning C4244: '=': '__int64'에서 'double'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yhmsm\workspace\C\codeup_basic_100\codeup_basic_100\test.c(828,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
   codeup_basic_100.vcxproj -> C:\Users\yhmsm\workspace\C\codeup_basic_100\Debug\codeup_basic_100.exe

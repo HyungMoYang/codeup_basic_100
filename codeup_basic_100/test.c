@@ -2,14 +2,13 @@
 #include <stdio.h>
 
 int main(void) {
-	int i, num;
-
-	scanf("%d", &num);
+	float num;
 	
-	for (i = 0; i <= num; i++) {
-		printf("%d\n", i);
-	}
-
+	scanf("%f", &num);
+	if (num >= 50 && num <= 60)
+		printf("win");
+	else
+		printf("lose");
 	return 0;
 }
 
@@ -453,7 +452,6 @@ void f_1062(void) {
 	printf("%d", a ^ b);
 }
 
-
 // 기초 삼항 연산
 void f_1063(void) {
 	int a, b;
@@ -659,5 +657,15 @@ void f_1076(void) {
 	scanf("%c", &ap);
 	for (i = 'a'; i <= ap; i++) {
 		printf("%c ", i);
+	}
+}
+
+void f_1077(void) {
+	int i, num;
+
+	scanf("%d", &num);
+
+	for (i = 0; i <= num; i++) {
+		printf("%d\n", i);
 	}
 }
