@@ -669,3 +669,60 @@ void f_1077(void) {
 		printf("%d\n", i);
 	}
 }
+
+// [기초-종합]
+void f_1078(void) {
+	int sum = 0;
+	int i, num;
+
+	scanf("%d", &num);
+
+	for (i = 1; i <= num; i++) {
+		if (i % 2 == 0)
+			sum += i;
+	}
+	printf("%d", sum);
+}
+
+void f_1079(void) {
+	char ap;
+
+	while (1) {
+		scanf("%c", &ap);
+		if (ap == 'q') {
+			printf("q");
+			break;
+		}
+		printf("%c\n", ap);
+		getchar();
+
+	}
+}
+
+void f_1080(void) {
+	int num, sum = 0;
+	int i = 1;
+
+	scanf("%d", &num);
+
+	while (1) {
+		sum += i;
+		if (sum >= num)
+			break;
+		i++;
+	}
+	printf("%d", i);
+}
+
+void f_1081(void) {
+	int i, j;
+	int n, m;
+
+	scanf("%d %d", &n, &m);
+
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j <= m; j++) {
+			printf("%d %d\n", i, j);
+		}
+	}
+}
