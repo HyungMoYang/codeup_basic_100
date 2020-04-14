@@ -726,3 +726,44 @@ void f_1081(void) {
 		}
 	}
 }
+
+void f_1082(void) {
+	int num, i;
+
+	scanf("%X", &num);
+
+	for (i = 1; i < 16; i++) {
+		printf("%X*%X=%X\n", num, i, num * i);
+	}
+}
+
+void f_1083(void) {
+	int num, i;
+
+	scanf("%d", &num);
+
+	for (i = 1; i <= num; i++) {
+		if (i % 3 == 0)
+			printf("X ");
+		else
+			printf("%d ", i);
+	}
+}
+
+void f_1084(void) {
+	int count = 0;
+	int i, j, k;
+	int r, g, b;
+
+	scanf("%d %d %d", &r, &g, &b);
+
+	for (i = 0; i < r; i++) {
+		for (j = 0; j < g; j++) {
+			for (k = 0; k < b; k++) {
+				printf("%d %d %d\n", i, j, k);
+				count++;
+			}
+		}
+	}
+	printf("%d\n", count);
+}
