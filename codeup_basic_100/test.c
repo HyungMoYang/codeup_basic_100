@@ -767,3 +767,37 @@ void f_1084(void) {
 	}
 	printf("%d\n", count);
 }
+
+void f_1085(void) {
+	long long int h, b, c, s;
+	double result = 0;
+
+	scanf("%lld %lld %lld %lld", &h, &b, &c, &s);
+	result = h * b * c * s;
+
+	printf("%.1lf MB", result / 8 / 1024 / 1024);
+}
+
+void f_1086(void) {
+	long long int width, height, bit;
+	double result;
+
+	scanf("%lld %lld %lld", &width, &height, &bit);
+
+	result = width * height * bit;
+	printf("%.2lf MB", result / 8 / 1024 / 1024);
+}
+
+void f_1087(void) {
+	int num, sum = 0;
+	int i;
+
+	scanf("%d", &num);
+
+	for (i = 1; ; i++) {
+		if (sum >= num)
+			break;
+		sum += i;
+	}
+	printf("%d\n", sum);
+}
