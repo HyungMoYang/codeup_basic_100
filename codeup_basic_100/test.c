@@ -801,3 +801,35 @@ void f_1087(void) {
 	}
 	printf("%d\n", sum);
 }
+
+void f_1088(void) {
+	int i, num;
+
+	scanf("%d", &num);
+
+	for (i = 1; i <= num; i++) {
+		if (i % 3 == 0)
+			continue;
+		printf("%d ", i);
+	}
+
+}
+
+void f_1089(void) {
+	int a, d, n;
+
+	scanf("%d %d %d", &a, &d, &n);
+
+	printf("%d", a + (n - 1) * d);
+}
+
+void f_1090(void) {
+	long long int a, r, n;
+	int i, j;
+
+	scanf("%lld %lld %lld", &a, &r, &n);
+
+	for (i = 0; i < n - 1; i++)
+		a *= r;
+	printf("%lld", a);
+}
