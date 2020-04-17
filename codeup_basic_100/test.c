@@ -833,3 +833,29 @@ void f_1090(void) {
 		a *= r;
 	printf("%lld", a);
 }
+
+void f_1091(void) {
+	long long int a, m, d;
+	int i, n;
+
+	scanf("%lld %lld %lld %d", &a, &m, &d, &n);
+
+	for (i = 0; i < n - 1; i++) {
+		a = a * m + d;
+	}
+
+	printf("%lld", a);
+}
+
+void f_1092(void) {
+	int a, b, c;
+	int day = 1;
+
+	scanf("%d %d %d", &a, &b, &c);
+
+	// ==0 인경우가 문제를 푼 날
+	while (day % a != 0 || day % b != 0 || day % c != 0) {
+		day++;
+	}
+	printf("%d", day);
+}
