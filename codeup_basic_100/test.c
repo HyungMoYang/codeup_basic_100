@@ -859,3 +859,50 @@ void f_1092(void) {
 	}
 	printf("%d", day);
 }
+
+// [기초-1차원배열]
+void f_1093(void) {
+	int arr[23] = { 0, }; // C에서의 리스트 초기화
+	int cnt, i, input;
+
+	scanf("%d", &cnt);
+
+	for (i = 0; i < cnt; i++) {
+		scanf("%d", &input);
+		arr[input - 1]++;
+	}
+
+	for (i = 0; i < 23; i++) {
+		printf("%d ", arr[i]);
+	}
+}
+
+void f_1094(void) {
+	int i, input, num;
+	int arr[10000] = { 0, };
+
+	scanf("%d", &input);
+
+	for (i = 0; i < input; i++) {
+		scanf("%d", &num);
+		arr[i] = num;
+	}
+
+	for (i = input - 1; i >= 0; i--) {
+		printf("%d ", arr[i]);
+	}
+}
+
+void f_1095(void) {
+	int i, input, num, min = 24;
+
+	scanf("%d", &input);
+
+	for (i = 0; i < input; i++) {
+		scanf("%d", &num);
+		if (num < min)
+			min = num;
+	}
+
+	printf("%d", min);
+}
