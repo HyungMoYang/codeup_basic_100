@@ -906,3 +906,66 @@ void f_1095(void) {
 
 	printf("%d", min);
 }
+
+// [기초-2차원배열]
+void f_1096(void) {
+	int go_Board[19][19] = { 0, };
+	int input, x, y, i, j;
+
+	scanf("%d", &input);
+
+	for (i = 0; i < input; i++) {
+		scanf("%d %d", &x, &y);
+		if (go_Board[x - 1][y - 1] != 1)
+			go_Board[x - 1][y - 1] = 1;
+	}
+
+	for (i = 0; i < 19; i++) {
+		for (j = 0; j < 19; j++) {
+			printf("%d ", go_Board[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+void f_1097(void) {
+	int go_Board[19][19] = { 0, }; // 바둑판
+	int input, x, y, i, j, k;
+
+	// 바둑판 초기 상태 입력
+	for (i = 0; i < 19; i++) {
+		for (j = 0; j < 19; j++) {
+			scanf("%d", &input);
+			go_Board[i][j] = input;
+		}
+	}
+
+	scanf("%d", &input); // 좌표 개수 입력
+	for (i = 0; i < input; i++) {
+
+		scanf("%d %d", &x, &y); // 좌표 입력	
+
+		// 행 좌표 값 변경
+		for (j = 0; j < 19; j++) {
+			if (go_Board[j][y - 1] == 0)
+				go_Board[j][y - 1] = 1;
+			else
+				go_Board[j][y - 1] = 0;
+		}
+		// 열 좌표 값 변경
+		for (k = 0; k < 19; k++) {
+			if (go_Board[x - 1][k] == 0)
+				go_Board[x - 1][k] = 1;
+			else
+				go_Board[x - 1][k] = 0;
+		}
+	}
+
+	// 결과 바둑판 출력
+	for (i = 0; i < 19; i++) {
+		for (j = 0; j < 19; j++) {
+			printf("%d ", go_Board[i][j]);
+		}
+		printf("\n");
+	}
+}
