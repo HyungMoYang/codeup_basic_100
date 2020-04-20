@@ -969,3 +969,86 @@ void f_1097(void) {
 		printf("\n");
 	}
 }
+
+void f_1098(void) {
+	int coordinate[100][100] = { 0, };
+	int width, height, num, l, d, x, y;
+	int i, j;
+
+	scanf("%d %d", &height, &width); // 격자판 크기
+	scanf("%d", &num); // 막대 개수
+
+	// 막대 놓기
+	for (i = 0; i < num; i++) {
+		scanf("%d %d %d %d", &l, &d, &x, &y);
+
+		// 막대 가로로 놓기
+		if (d == 0) {
+			for (j = y; j < y + l; j++)
+				coordinate[x - 1][j - 1] = 1;
+		}
+		// 막대 세로로 놓기
+		else {
+			for (j = x; j < x + l; j++)
+				coordinate[j - 1][y - 1] = 1;
+		}
+	}
+
+	// 출력
+	for (i = 0; i < height; i++) {
+		for (j = 0; j < width; j++) {
+			printf("%d ", coordinate[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+void f_1099(void) {
+	int maze[10][10] = { 0, }; // 미로
+	int input;
+	int i, j;
+	int flag = 0; // 탈출 조건
+
+	// 미로 생성
+	for (i = 0; i < 10; i++) {
+		for (j = 0; j < 10; j++) {
+			scanf("%d", &input);
+			maze[i][j] = input;
+		}
+	}
+
+	// 먹이 찾아가기 
+	for (i = 1; i < 10; i++) {
+		if (flag == 1) // 탈출 조건
+			break;
+		for (j = 1; j < 10; j++) {
+			// 탈출 조건 - 먹이 발견 or 벽에 부딪힐 때
+			if (maze[i][j] == 2 || (maze[i][j + 1] == 1 && maze[i + 1][j] == 1)) {
+				\
+					maze[i][j] = 9;
+				flag = 1; // 탈출 조건
+				break;
+			}
+			maze[i][j] = 9;
+			// 길 있을때
+			if (maze[i][j + 1] == 0) {
+				continue;
+			}
+			// 길 없을때
+			else if (maze[i][j + 1] == 1) {
+				i++;
+				j--;
+			}
+		}
+	}
+
+	// 출력
+	for (i = 0; i < 10; i++) {
+		for (j = 0; j < 10; j++) {
+			printf("%d ", maze[i][j]);
+		}
+		printf("\n");
+	}
+
+
+}
